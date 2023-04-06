@@ -2,8 +2,14 @@
 
 public partial class AppShell : Shell
 {
-	public AppShell()
-	{
-		InitializeComponent();
-	}
+
+    #region - - - - - - Constructors - - - - - -
+
+    public AppShell()
+    {
+        InitializeComponent();
+    }
+
+    #endregion Constructors
+
 }
