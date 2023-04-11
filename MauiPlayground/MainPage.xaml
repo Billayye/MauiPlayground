@@ -32,7 +32,6 @@
                 x:Name="CounterBtn"
                 Text="Click me"
                 SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
             <Label
@@ -50,14 +49,12 @@
                     x:Name="ButtonToTranslateNumber"
                     Text="Translate"
                     SemanticProperties.Hint="Translates input to a corresponding phone number"
-                    Clicked="OnTranslateButtonClicked"
                     HorizontalOptions="Center" />
 
             <Button
                 x:Name="ButtonToCallNumber"
                 Text="Call"
                 SemanticProperties.Hint="Uses device's phonecall mechanism to call the phone number"
-                Clicked="OnCallButtonClicked"
                 HorizontalOptions="Center"
                 IsEnabled="False" />
 

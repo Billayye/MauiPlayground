@@ -15,6 +15,13 @@ public partial class MainPage : ContentPage
     public MainPage()
     {
         InitializeComponent();
+
+        // Subscribing Event Handlers to Events on Controls
+        CounterBtn.Clicked += OnCounterClicked;
+        ButtonToCallNumber.Clicked += OnCallButtonClicked;
+        ButtonToCallNumber.Clicked += OnTranslateButtonClicked;
+        ButtonToCallNumber.Clicked -= OnTranslateButtonClicked;
+        ButtonToTranslateNumber.Clicked += OnTranslateButtonClicked;
     }
 
     #endregion Constructors
