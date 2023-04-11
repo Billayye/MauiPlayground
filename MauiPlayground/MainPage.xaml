@@ -50,14 +50,14 @@
                     x:Name="ButtonToTranslateNumber"
                     Text="Translate"
                     SemanticProperties.Hint="Translates input to a corresponding phone number"
-                    Clicked="OnTranslate"
+                    Clicked="OnTranslateButtonClicked"
                     HorizontalOptions="Center" />
 
             <Button
                 x:Name="ButtonToCallNumber"
                 Text="Call"
                 SemanticProperties.Hint="Uses device's phonecall mechanism to call the phone number"
-                Clicked="OnCall"
+                Clicked="OnCallButtonClicked"
                 HorizontalOptions="Center"
                 IsEnabled="False" />
 

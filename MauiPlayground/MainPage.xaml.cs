@@ -21,7 +21,7 @@ public partial class MainPage : ContentPage
 
     #region - - - - - - Methods - - - - - -
 
-    async void OnCall(object sender, EventArgs e)
+    async void OnCallButtonClicked(object sender, EventArgs e)
     {
         if (await DisplayAlert(
                 "Dial a Number",
@@ -58,7 +58,7 @@ public partial class MainPage : ContentPage
         SemanticScreenReader.Announce(CounterBtn.Text);
     }
 
-    private void OnTranslate(object sender, EventArgs e)
+    private void OnTranslateButtonClicked(object sender, EventArgs e)
     {
         TranslatedNumber = PhonewordTranslator.ToNumber(TextInputPhoneNumber.Text);
 
