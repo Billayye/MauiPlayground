@@ -35,7 +35,34 @@
                 Clicked="OnCounterClicked"
                 HorizontalOptions="Center" />
 
+            <Label
+                Text="Enter a Phoneword"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Enter a Phone Word"
+                FontSize="20"
+                HorizontalOptions="Center" />
+
+            <Entry
+                x:Name="TextInputPhoneNumber"
+                Text= "1-555-NETMAUI" />
+
+            <Button
+                    x:Name="ButtonToTranslateNumber"
+                    Text="Translate"
+                    SemanticProperties.Hint="Translates input to a corresponding phone number"
+                    Clicked="OnTranslate"
+                    HorizontalOptions="Center" />
+
+            <Button
+                x:Name="ButtonToCallNumber"
+                Text="Call"
+                SemanticProperties.Hint="Uses device's phonecall mechanisms to call the phone number"
+                Clicked="OnCall"
+                HorizontalOptions="Center"
+                IsEnabled="False" />
+
         </VerticalStackLayout>
+
     </ScrollView>
 
 </ContentPage>
