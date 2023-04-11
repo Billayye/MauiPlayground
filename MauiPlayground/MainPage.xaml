@@ -56,7 +56,7 @@
             <Button
                 x:Name="ButtonToCallNumber"
                 Text="Call"
-                SemanticProperties.Hint="Uses device's phonecall mechanisms to call the phone number"
+                SemanticProperties.Hint="Uses device's phonecall mechanism to call the phone number"
                 Clicked="OnCall"
                 HorizontalOptions="Center"
                 IsEnabled="False" />
